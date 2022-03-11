@@ -1,0 +1,5 @@
+/* Set the size of the div element that contains the map */
+.sectionflex {
+  display: flex;
+  flex-direction: column
+}
