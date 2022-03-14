@@ -1,5 +1,10 @@
 /* Set the size of the div element that contains the map */
 
+body{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .sectionflex {
     display: flex;
     flex-direction: column;
@@ -12,8 +17,12 @@
     margin-right: auto;
     height: 408px;
     width: 100%;
+    border: 1px solid
 }
 
+h3{
+    margin-top: 150px;
+}
 .heks {
     width: 60%;
     max-width: 500px;
@@ -31,16 +40,136 @@ hr {
     font-weight: 10px;
 }
 
-nav ul {
+nav {
     display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+    margin-left: -150px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    position: fixed;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+
+    list-style-type: none;
+    width: 95%;
+    
+}
+
+.nav-ul li a {
+    display: inline-block;
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #00bf6f;
+    
+}
+
+.home {
+    float: left;
+}
+
+.hamburger {
+    border: 0;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    background-color: transparent;
+}
+
+
+.hamburger:focus {
+    outline: none;
+}
+
+.nav-ul li .film {
+    color: #00bf6f;
+    max-width: 80px;
+    border: 1px solid #00bf6f;
+    border-radius: 25px;
+    margin: 20px
+}
+
+.nav-ul li .film:hover {
+    color: white;
+    background-color: #00bf6f;
+    
+}
+
+
+
+.logo {
+   height: 70px;
+}
+
+.mobile {
+    display: none;
 }
 
 
 /* On screens that are 600px or less, set the background color to olive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .googlemap {
         width: 90%;
+    }
+
+    body {
+        max-width: 100%;
+    }
+
+    nav{
+        margin-left: 0;
+    }
+
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-ul.show {
+        display: flex;
+
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: 50%;
+    }
+
+    .mobile{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1798px) {
+
+    .nav-ul li a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav-ul li a{
+        font-size: 10px;
     }
 }
