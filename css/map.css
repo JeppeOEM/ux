@@ -1,7 +1,13 @@
 /* Set the size of the div element that contains the map */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -11,6 +17,60 @@ body{
     padding-bottom: 10px;
     border-bottom: 3px solid #00bf6f;
 }
+
+
+nav.top-nav {
+    position: fixed;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 12px 0;
+}
+
+nav.top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav.top-nav ul li {
+    margin: 8px 14px;
+    text-align: center;
+}
+
+nav.top-nav li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.top-nav a:hover,
+nav.top-nav a:focus {
+    color: #00bf6f;   
+}
+
+nav.top-nav li .film {
+    color: #00bf6f;
+    border: 1px solid #00bf6f;
+    border-radius: 25px;
+    display: none;
+    padding: 20px;
+    width: 140px;
+}
+
+nav.top-nav li .film:hover {
+    color: white;
+    background-color: #00bf6f;
+    
+}
+
+
+
+
 
 .googlemap {
     margin-left: auto;
@@ -44,48 +104,6 @@ hr {
     font-weight: 10px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-left: 15px;
-    margin-left: -150px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: white;
-    position: fixed;
-}
-
-.nav-ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: left;
-
-    list-style-type: none;
-    width: 95%;
-    
-}
-
-.nav-ul li a {
-    display: inline-block;
-    text-align: center;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    color: black;
-    text-decoration: none;
-    width: 100%;
-    padding: 10px;
-    font-size: 1vw;
-    font-weight: bold;
-}
-
-nav a:hover,
-nav a:focus {
-    color: #00bf6f;
-    
-}
-
 .home {
     float: left;
 }
@@ -102,20 +120,6 @@ nav a:focus {
 
 .hamburger:focus {
     outline: none;
-}
-
-.nav-ul li .film {
-    color: #00bf6f;
-    max-width: 80px;
-    border: 1px solid #00bf6f;
-    border-radius: 25px;
-    margin: 20px
-}
-
-.nav-ul li .film:hover {
-    color: white;
-    background-color: #00bf6f;
-    
 }
 
 .section-email{
@@ -206,55 +210,45 @@ input{
 
 
 .logo {
-   height: 70px;
+   height: 64px;
+   margin-right: 21px;
 }
 
-.mobile {
-    display: none;
-}
 
 
 /* On screens that are 600px or less, set the background color to olive */
+
 
 @media screen and (max-width: 800px) {
     .googlemap {
         width: 100%;
     }
 
-    body {
-        max-width: 95%;
-    }
-
-    nav{
-        margin-left: 0;
-    }
-
-    .nav-ul {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-    }
-    .nav-ul.show {
-        display: flex;
-
-    }
-
     .hamburger {
         display: block;
         margin-left: 50%;
     }
-.nav-ul li a{
-        font-size: 10px;
-    }
-    .mobile{
+
+    .logo{
         display: flex;
     }
 }
 
-@media screen and (min-width: 1798px) {
+@media screen and (min-width: 1300px) {
+    nav.top-nav li .film {
+        display: block;
+    }
+}
 
-    .nav-ul li a{
-        font-size: 18px;
+@media screen and (min-width: 1440px) {
+    body, nav.top-nav {
+        width: 80%
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    body, nav.top-nav {
+        width: 50%
     }
 }
 
