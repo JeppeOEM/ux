@@ -64,6 +64,17 @@ hr {
     margin: auto;
 }
 
+.section-email h1 {
+    text-align: center
+}
+
+.section-email p {
+    margin-top: 20px;
+    background-color: #EDEDEE;
+    padding: 10px;
+    font-size: 16px;
+}
+
 input {
     height: 50px
 }
@@ -81,31 +92,17 @@ input {
 
 #send {
     cursor: pointer;
-    color: white;
-    background-color: #00bf6f;
-    border: 0;
-    font-weight: bold;
+    color: #00bf6f;
+    background-color: white;
+    border: 3px solid #00bf6f;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 #send:hover {
-    color: rgb(73, 73, 73);
-}
-
-.sociale {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 60px;
-    line-height: 40px;
-}
-
-.sociale h2 {
-    font-weight: 500;
-}
-
-.sociale p {
-    margin-bottom: -10px;
-    font-size: 18px;
-    color: #837979;
+    color: white;
+    background-color: #00bf6f;
 }
 
 .green {
@@ -131,6 +128,42 @@ input {
 .logo {
     height: 64px;
     margin-right: 21px;
+}
+
+.input-check {
+    margin: 20px 0;
+    flex-direction: row;
+    display: flex;
+    background-color: #EDEDEE;
+}
+
+.input-check label {
+    margin-top: 5px;
+}
+
+.input-check input {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.section-email .input-check input:checked {
+    color: #00bf6f;
+}
+
+.form-control {
+    width: 50%;
+    margin: 15px auto;
+    color: #939393;
+    background-color: #EDEDEE;
+    padding: 0 5px
+}
+
+.btn-primary {
+    width: 25%;
+    margin: 15px auto;
+    border-radius: 6px;
+    background-color: none;
+    color: #00bf6f;
 }
 
 

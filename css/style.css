@@ -5,11 +5,11 @@ nav.top-nav {
     align-items: center;
     background-color: white;
     padding: 12px 0;
+    flex-wrap: wrap;
 }
 
-nav.top-nav ul {
+.nav-ul {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     justify-content: center;
@@ -64,19 +64,28 @@ nav.top-nav li .film:hover {
     margin-right: 21px;
 }
 
+.pc {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     nav.top-nav ul {
         display: none;
+        width: 100%;
+        flex-direction: column;
     }
-    .show {
+    .nav-ul.show {
         display: flex
     }
     .hamburger {
         display: block;
-        margin-left: 50%;
+        margin-left: 55%;
     }
     .logo {
         display: flex;
+    }
+    .mobile {
+        display: none
     }
 }
 
