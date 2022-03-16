@@ -59,6 +59,11 @@ nav.top-nav li .film:hover {
     outline: none;
 }
 
+.logo {
+    height: 64px;
+    margin-right: 21px;
+}
+
 @media screen and (max-width: 800px) {
     nav.top-nav ul {
         display: none;
