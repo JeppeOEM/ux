@@ -1,0 +1,96 @@
+nav.top-nav {
+    position: fixed;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 12px 0;
+}
+
+nav.top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav.top-nav ul li {
+    margin: 8px 14px;
+    text-align: center;
+}
+
+nav.top-nav li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.top-nav a:hover,
+nav.top-nav a:focus {
+    color: #00bf6f;
+}
+
+nav.top-nav li .film {
+    color: #00bf6f;
+    border: 1px solid #00bf6f;
+    border-radius: 25px;
+    display: none;
+    padding: 20px;
+    width: 140px;
+}
+
+nav.top-nav li .film:hover {
+    color: white;
+    background-color: #00bf6f;
+}
+
+.hamburger {
+    border: 0;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    background-color: transparent;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 800px) {
+    nav.top-nav ul {
+        display: none;
+    }
+    .show {
+        display: flex
+    }
+    .hamburger {
+        display: block;
+        margin-left: 50%;
+    }
+    .logo {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    nav.top-nav li .film {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body,
+    nav.top-nav {
+        width: 80%
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    body,
+    nav.top-nav {
+        width: 50%
+    }
+}
