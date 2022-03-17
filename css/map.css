@@ -166,11 +166,33 @@ input {
     color: #00bf6f;
 }
 
+.section-qr {
+    margin: 20px 0px;
+    text-align: center;
+    border-bottom: 3px solid #00bf6f;
+}
+
+.section-qr h2{
+    margin-bottom:10px;
+}
+
+.section-qr iframe{
+    display: flex;
+    margin: auto;
+    width: 400px;
+   height:230px;
+   margin-bottom: 20px
+}
+
 
 /* On screens that are 600px or less, set the background color to olive */
 
 @media screen and (max-width: 800px) {
     .googlemap {
         width: 100%;
+    }
+    
+    p{
+    font-size: 12px;
     }
 }
