@@ -3,18 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700;800&family=Lato:wght@700;900&family=Roboto:wght@400;700&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    max-width: 90%;
     margin: 0 auto;
 }
 
 nav.top-nav {
-    margin-top: -100px;
+    width: 100%;
+    margin-top: -90px;
     z-index: 3;
+    
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+nav.top-nav .hamburger {
+    margin-left: 0;
+} 
+
+nav.top-nav .active {
+    color: #00bf6f;
 }
 
 
@@ -27,45 +39,55 @@ h1, h2, h3, h4 {
     letter-spacing: 1px;
 }
 
-button {
-    border: 3px solid #00ce6f;
-    color: #00ce6f;
-    padding: 12px 18px;
-    margin: 0 4px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    font-family: 'Lato';
-    max-width: 180px;
-    border-radius: 10px;
+p {
+    font-family: 'Roboto';
+    font-size: 1.05rem;
+    line-height: 1.5rem;
 }
 
-button:hover, button.active {
-    padding: 12px 16.8px;
+button, a.button {
+    border: 2.5px solid #00ce6f;
+    color: #00ce6f;
+    background-color: rgba(0,0,0,0);
+    padding: 12px 18px;
+    margin: 4px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Lato';
+    max-width: 200px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+a.button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 14px;
+    text-decoration: none;
+}
+
+button:hover, button.active, a.button:hover, a.button.active {
+    padding: 12px 17.9px;
     font-weight: 800;
     color: white;
     background-color: #00bf6f;
-    border: 3px solid #00bf6f;
+    border: 2.5px solid #00bf6f;
 }
-
-#accept-terms {
-    width: 100px;
-    height: 100px;
-}
-#accept-terms {
-    /* CUSTOM CHECKBOX GOES HERE  */
-  }
 
 
 
 
 header {
-    margin-top: 100px;
-    height: 50vh;
+    margin: 0 auto;
+    margin-top: 90px;
+    height: 48vh;
     min-height: 270px;
     max-height: 450px;
     background-image:url(../img/forside-bg.jpg);
     background-size: cover;
-    padding: 32px;
+    padding: 18px;
     position: relative;
     z-index: 1;
 }
@@ -74,8 +96,8 @@ header h1 {
     position: absolute;
     bottom: 100px;
     color: white;
-    font-size: 3.1rem;
-    line-height: 3.3rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
     max-width: 600px;
     text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
 }
@@ -85,22 +107,42 @@ header h1 {
 
 
 .intro {
+    margin: 0 auto;
     display: flex;
+    margin-bottom: 70px;
 }
 
 .intro .textbox {
-    margin: 32px;
-    padding: 24px;
+    margin: 18px;
+    padding: 20px;
     background-color: #ededee;
-    max-width: 740px;
+    max-width: 850px;
+    width: 100%;
     margin-top: -84px;
     z-index: 2;
     position: relative;
     border-radius: 24px;
 }
 
+.intro .textbox p {
+    max-width: 720px;
+}
+
 .intro .textbox p:last-child {
     margin-top: 21px;
+}
+
+.intro a {
+    display: none;
+    z-index: 2;
+    width: 220px;
+    max-height: 220px;
+    margin-left: auto;
+    margin-top: -88px;
+}
+
+.intro img {
+    width: 100%;
 }
 
 
@@ -108,5 +150,182 @@ header h1 {
 
 
 .item-list {
+    margin: 0 auto;
+    padding: 24px;
+    margin-bottom: 74px;
+    padding-bottom: 54px;
     background-color: #ededee;
+}
+
+.item-list .buttons {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.item-list #by, .item-list #historie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+}
+
+.item-list .item {
+    width: 100%;
+    max-width: 260px;
+    color: black;
+    text-decoration: none;
+}
+
+.item-list .item:hover h2 {
+    color: #00bf6f;
+}
+
+.item-list .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.item-list .item .textbox {
+    position: relative;
+    margin: 18px;
+    margin-top: -50px;
+    background-color: white;
+    padding: 24px 16px;
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.item-list .item .textbox h2 {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 12px;
+}
+
+.item-list .item .textbox p {
+    font-size: 0.95rem;
+    line-height: 1.27rem;
+}
+
+.item-list .hidden {
+    display: none !important;
+}
+
+
+
+
+.witches {
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.witches img {
+    display: block;
+    width: calc(100% - 36px);
+    margin: 0 auto;
+}
+
+.witches .textbox {
+    position: relative;
+    margin: 32px;
+    padding: 18px;
+    background-color: #ededee;
+    margin-top: -70px;
+    border-radius: 15px;
+}
+
+.witches .textbox h2 {
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 12px;
+}
+
+.witches .textbox p:last-child {
+    margin-top: 14px;
+}
+
+
+
+
+.gallery {
+    margin: 0 auto;
+    background-color: #ededee;
+    height: 400px;
+    margin-bottom: 70px;
+}
+
+
+
+
+
+@media only screen and (min-width: 801px) {
+    header, .intro, .item-list, .witches, .gallery {
+        width: 90%;
+    }
+
+    .intro .textbox {
+        margin-right: 0;
+    }
+
+    .witches img{
+        width: 100%;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 1040px) {
+    body {
+        width: 100%;
+    }
+    
+    header, .intro, .item-list, .witches, .gallery {
+        width: 80%;
+        max-width: 1400px;
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    .intro .textbox {
+        margin-left: 0;
+        padding: 28px;
+    }
+    
+    header h1 {
+        font-size: 2.7rem;
+        line-height: 3rem;
+    }
+    
+    .intro a, .intro img {
+        display: block
+    }
+
+    .witches {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .witches img {
+        width: 70%;
+        max-width: 790px;
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .witches .textbox {
+        margin: 0;
+        margin-top: -36%;
+        max-width: 680px;
+        padding: 28px;
+        height: fit-content;
+    }
+
+    .witches a.button {
+        margin: 0;
+        margin-top: 14px;
+    }
 }

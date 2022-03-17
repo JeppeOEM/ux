@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/frontpage.css">
     <script src="main.js" defer></script>
+    <script src="itemList.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="mappage.js"></script>
     <meta charset="UTF-8">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/648072ba1a.js" crossorigin="anonymous"></script>
 </head>
+
 
 
 
@@ -29,86 +31,120 @@
             <li><a href="#">AKTIV OPLEVELSER</a></li>
             <li><a href="#">SPISETEDER</a></li>
             <li><a href="#">SHOPPING</a></li>
-            <li><a href="#">BY & HISTORIE</a></li>
+            <li><a href="index.html" class="active">BY & HISTORIE</a></li>
             <li><a href="#">KULTUR</a></li>
             <li><a class="film" href="#">SE FILM!</a></li>
         </ul>
     </nav>
     
+
     <header>
         <h1>Træd ind i Køges historiske fodspor</h1>
     </header>
+
 
     <section class="intro">
         <div class="textbox">
             <p>Køge er ubeskriveligt rig på historie, som kan dateres helt tilbage mod år 1288. Køge er en vigtig pulsåre for Danmark, og har historisk set altid været det. Byen gemmer på mange velbevarede skatte fra 1600'tallet, der står i smuk synergi med Køges livlige, moderne og kunstneriske bydele, der skinner og vokser fra alle sider.</p>
             <p>Historien smelter sammen med nutiden, og endda fremtiden i sådan en grad, at det føles som en tidsrejse at bevæge sig rundt i byen. Køge er ikke bange for at vise sine gamle klæder - også selvom det indebærer noget, vi ikke har lyst til at tale om...</p>
         </div>
-        <img src="#" alt="Nyhed! Oplev heksenes sidste dage på vores kampagne-side.">
-    </section>
+        <a href="#">
+            <img src="img/news-circle.png" alt="Nyhed! Oplev heksenes sidste dage på vores kampagne-side.">
+        </a>
+        </section>
+
 
     <section class="item-list">
         <div class="buttons">
-            <button id="by-btn" class="active">Køge By</button>
-            <button id="historie-btn">Køges Historie</button>
+            <button id="historie-btn" class="active" onclick="historieBtn()">Køges Historie</button>
+            <button id="by-btn" onclick="byBtn()">Køge By</button>
         </div>
-        <div id="by">
-            <section class="item">
-                <img src="#" alt="Køge torv bymidte">
+        <div id="historie">
+            <a class="item" href="#">
+                <img src="img/list-koege-torv.jpg" alt="Køge torv bymidte">
                 <div class="textbox">
                     <h2>Køge Torv</h2>
                     <p>Køge Torv står som et af Danmarks bedst bevarede middelaldertorve. Her kan du opleve sprudlende torvedage.</p>
                 </div>
-            </section>
-            <section class="item">
-                <img src="#" alt="Køge museum">
+            </a>
+            <a class="item" href="#">
+                <img src="img/list-koege-museum.jpg" alt="Køge museum">
                 <div class="textbox">
                     <h2>Køge Museum</h2>
                     <p>Den gamle købmandsgård fra 1619 er samlingspunkt for flere inspirerende udstillinger. Kom helt tilbage til jægerstenalderen og lær historien af kendte eksperter, der tager dig en tur med tilbage til vikingetiden.</p>
                 </div>
-            </section>
-            <section class="item">
-                <img src="#" alt="Sejlads i Køge ås">
+            </a>
+            <a class="item" href="#">
+                <img src="img/list-koege-museum.jpg" alt="Køge museum">
+                <div class="textbox">
+                    <h2>(den der kirke)</h2>
+                    <p>bottom text.</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="by" class="hidden">
+            <a class="item" href="#">
+                <img src="img/list-vandoplevelser.jpg" alt="Sejlads i Køge ås">
                 <div class="textbox">
                     <h2>Vandoplevelser i Køgeområdet</h2>
                     <p>Om sommeren kan du nyde en dejlig sejltur i kano på Køge Å, som bugter sig ind igennem hyggelige Køge. Hos VisitKøge kan du leje en kano i halvanden time, og på den tid kan du nå at padle ind igennem den gamle, handelsby Køge og ud til skoven omkring Køge Ås. </p>
                 </div>
-            </section>
-        </div>
-
-        <div id="historie">
-            <section class="item">
-                <img src="#" alt="ÆÆÆÆÆÆÆÆÆÆÆ">
+            </a>
+            <a class="item" href="#">
+                <img src="img/list-koege-torv.jpg">
                 <div class="textbox">
                     <h2>ÆÆ</h2>
                     <p>Æ</p>
                 </div>
-            </section>
-            <section class="item">
-                <img src="#" alt="ÆÆÆÆÆÆÆÆÆÆÆ">
+            </a>
+            <a class="item" href="#">
+                <img src="img/list-koege-torv.jpg">
                 <div class="textbox">
                     <h2>ÆÆ</h2>
                     <p>Æ</p>
                 </div>
-            </section>
+            </a>
+            <a class="item" href="#">
+                <img src="img/list-koege-torv.jpg">
+                <div class="textbox">
+                    <h2>ÆÆ</h2>
+                    <p>Æ</p>
+                </div>
+            </a>
         </div>
+    </section>
 
-        <section class="gallery">
 
-        </section>
+    <section class="witches">
+        <img src="img/koege-kirke.jpg" alt="Sct Nicolai Kirke i Køge">
+        <div class="textbox">
+            <h2>Følg heksenes sidste dage</h2>
+            <p>I 1600-tallet var Køge berygtet som byen, der fik dømt flest "hekse" og "troldkvinder" for retten, dømt for diverse "djævelskaber." Både myndighederne og kirken arbejdede på højtryk for at holde djævelskaben nede, men ak, som én heks blev afbrændt, dukkede den næste heks hastigt op.</p>
+            <p>Køge havde skabt så meget opmærksomhed, at Vatikanet har taget notits og gemt lignende raporter i deres arkiv.</p>
+            <a class="button" href="mappage.html" target="_blank">Læs mere</a>
+        </div>
+    </section>
 
-        <section class="newsletter">
-            <h3>Vær først i køen til nye oplevelser</h3>
-            <p>Tilmeld dig vores nyhedsbrev, og bliv underrettet øjeblikkeligt, når vi igangsætter kampagner, konkurrencer eller nye, spændende aktiviteter i og omkring Køge.</p>
-            <input type="text" id="name" aria-label="Indtast dit navn">
-            <input type="text" id="email" aria-label="Indtast din mail">
-            <button>Videre</button>
 
-            <div class="terms">
-                <input type="checkbox" id="accept-terms" aria-label="Acceptér privatlivspolitik">
-                <p>Jeg accepterer Connect Køges privatlivspolitik og er indforstået med, at jeg fremover vil modtage deres nyhedsbreve.</p>
-            </div>
-        </section>
+    <section class="gallery">
+        <!-- Fuuuuuuuuuuuck....... -->
+        gallery gos here
+    </section>
+
+
+    <section class="newsletter">
+        <h3>Vær først i køen til nye oplevelser</h3>
+        <p>Tilmeld dig vores nyhedsbrev, og bliv underrettet øjeblikkeligt, når vi igangsætter kampagner, konkurrencer eller nye, spændende aktiviteter i og omkring Køge.</p>
+        
+        <input type="text" id="name" aria-label="Indtast dit navn">
+        <input type="text" id="email" aria-label="Indtast din mail">
+        <button>Videre</button>
+        
+        <div class="terms">
+            <input type="checkbox" id="accept-terms" aria-label="Acceptér privatlivspolitik">
+            <p>Jeg accepterer Connect Køges privatlivspolitik og er indforstået med, at jeg fremover vil modtage deres nyhedsbreve.</p>
+        </div>
     </section>
 
     <footer>
