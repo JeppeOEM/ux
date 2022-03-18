@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700;800&family=Lato:wght@700;900&family=Roboto:wght@400;700&display=swap');
+
 nav.top-nav {
     position: fixed;
     width: 90%;
@@ -76,6 +78,7 @@ nav.top-nav li .film:hover {
 }
 
 .input-check label {
+    font-family: 'Roboto', sans-serif;
     margin-top: 5px;
 }
 
@@ -129,20 +132,61 @@ input {
     font-size: 20px;
 }
 
-#send {
-    cursor: pointer;
-    color: #00bf6f;
-    background-color: white;
-    border: 3px solid #00bf6f;
-    font-size: 16px;
+
+
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
-    font-weight: bolder;
+    letter-spacing: 1px;
 }
 
-#send:hover {
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+}
+
+button, a.button, input[type="submit"] {
+    border: 2.5px solid #00ce6f;
+    color: #00ce6f;
+    background-color: rgba(0,0,0,0);
+    padding: 12px 18px;
+    margin: 4px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    max-width: 200px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a.button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 14px;
+    text-decoration: none;
+}
+
+button:hover, button.active, a.button:hover, a.button.active, input[type="submit"]:hover, input[type="submit"].active {
+    padding: 12px 17.9px;
+    font-weight: 800;
     color: white;
     background-color: #00bf6f;
+    border: 2.5px solid #00bf6f;
 }
+
+.btn-primary {
+    margin: 0 auto !important;
+}
+
+
+
+
 
 #acceptbtn {
     cursor: pointer;

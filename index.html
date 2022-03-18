@@ -10,7 +10,6 @@
     <script src="main.js" defer></script>
     <script src="itemList.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="mappage.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -22,18 +21,21 @@
 
 <body>
     <nav class="top-nav">
-        <img src="img/olepv-koege-logo-groen-1024x510-1.png" alt="Oplev Køge logo" class="logo">
+        <img src="img/olepv-koege-logo-groen-1024x510-1.png" alt="logo" class="logo pc">
         <button class="hamburger" id="hamburger">
             <i class="fas fa-bars fa-2x"></i>
         </button>
+
         <ul class="nav-ul" id="nav-ul">
+            <img src="img/olepv-koege-logo-groen-1024x510-1.png" alt="logo" class="logo mobile">
             <li><a href="#">FOR BØRN</a></li>
             <li><a href="#">AKTIV OPLEVELSER</a></li>
             <li><a href="#">SPISETEDER</a></li>
             <li><a href="#">SHOPPING</a></li>
-            <li><a href="index.html" class="active">BY & HISTORIE</a></li>
+            <li><a href="#" class="active">BY & HISTORIE</a></li>
             <li><a href="#">KULTUR</a></li>
             <li><a class="film" href="#">SE FILM!</a></li>
+
         </ul>
     </nav>
     
@@ -133,17 +135,17 @@
     </section>
 
 
-    <section class="newsletter">
-        <h3>Vær først i køen til nye oplevelser</h3>
+    <section class="section-email">
+        <h1>VÆR FØRST I KØEN TIL NYE OPLEVELSER</h1>
         <p>Tilmeld dig vores nyhedsbrev, og bliv underrettet øjeblikkeligt, når vi igangsætter kampagner, konkurrencer eller nye, spændende aktiviteter i og omkring Køge.</p>
-        
-        <input type="text" id="name" aria-label="Indtast dit navn">
-        <input type="text" id="email" aria-label="Indtast din mail">
-        <button>Videre</button>
-        
-        <div class="terms">
-            <input type="checkbox" id="accept-terms" aria-label="Acceptér privatlivspolitik">
-            <p>Jeg accepterer Connect Køges privatlivspolitik og er indforstået med, at jeg fremover vil modtage deres nyhedsbreve.</p>
+
+        <input type="text" class="form-control" id="navn" placeholder="Indtast navn">
+        <input type="text" class="form-control" id="email" placeholder="E-mail adresse">
+        <input type="submit" class="btn-primary" id="send" value="Videre">
+
+        <div class="input-check">
+            <input type="checkbox" name="Accept" id="Accept">
+            <label for="Accept">Jeg accepterer Connect Køges privatlivspolitik og er indforstået med, at jeg fremover vil modtage deres nyhedsbreve.</label>
         </div>
     </section>
 
@@ -152,4 +154,5 @@
     </footer>
 </body>
 
+<script src="mappage.js"></script>
 </html>
