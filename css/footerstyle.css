@@ -1,0 +1,146 @@
+/*Mobil footer*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px;
+    background-color: #11403D;
+    padding: 10px;
+    grid-column-gap: 100px;
+    grid-template-rows: 220px;
+    justify-content: center;
+}
+
+.grid-item{
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 25px 0px 0px -40px;
+}
+
+.grid-item ul{
+    list-style: none;
+    margin: 0px 0px 20px 40px;
+}
+
+.grid-item li{
+    margin-top: 7px;
+}
+
+.fed{
+    font-weight: bold;
+}
+
+.fa-brands{
+    color: #00CE6F;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: 40px;
+}
+
+.fa-facebook-square{
+    margin-left: 8px;
+}
+
+.fa-youtube{
+    margin-left: 8px;
+}
+
+.rettigheder{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.grid-item p{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 0px 12px 40px;
+}
+
+.grid-item img{
+    margin-left: 35px;
+}
+
+.rettigheder p{
+    font-size: 10px;
+}
+
+@media screen and (min-width:768px) {
+
+/*desktop footer*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    background-color: #11403D;
+    padding: 10px;
+    grid-column-gap: 100px;
+    grid-template-rows: 210px;
+    justify-content: center;
+}
+
+.grid-item{
+    font-size: 12px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 25px 0px 0px 0px;
+}
+
+.grid-item ul{
+    list-style: none;
+    margin: 0px;
+}
+
+.grid-item li{
+    margin-top: 7px;
+}
+
+.fed{
+    font-weight: bold;
+}
+
+.fa-brands{
+    color: #00CE6F;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.fa-facebook-square{
+    margin-left: 8px;
+}
+
+.fa-youtube{
+    margin-left: 8px;
+}
+
+.rettigheder{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+.rettigheder p{
+    font-size: 10px;
+}
+
+.grid-item p{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 0px 20px 0px;
+}
+
+.grid-item img{
+    margin-left: 0px;
+}
+
+    }
