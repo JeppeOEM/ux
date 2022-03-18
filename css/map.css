@@ -94,6 +94,10 @@ hr {
     margin-right: 21px;
 }
 
+.section-email h1 {
+    text-transform: uppercase;
+}
+
 .section-qr {
     margin: 20px 0px;
     text-align: center;
