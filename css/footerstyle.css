@@ -79,7 +79,7 @@
     grid-template-columns: 200px 200px 200px;
     background-color: #11403D;
     padding: 10px;
-    grid-column-gap: 100px;
+    grid-column-gap: 8%;
     grid-template-rows: 210px;
     justify-content: center;
 }

@@ -27,6 +27,9 @@ nav.top-nav li a {
     color: black;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 nav.top-nav a:hover,
@@ -36,11 +39,12 @@ nav.top-nav a:focus {
 
 nav.top-nav li .film {
     color: #00bf6f;
-    border: 1px solid #00bf6f;
+    border: 2px solid #00bf6f;
     border-radius: 25px;
     display: none;
-    padding: 20px;
+    padding: 16px;
     width: 140px;
+    font-size: 0.8rem;
 }
 
 nav.top-nav li .film:hover {
