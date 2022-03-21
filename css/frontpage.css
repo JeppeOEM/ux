@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+.hidden{
+    display: none;
+}
+
 body {
     margin: 0 auto;
 }
@@ -207,6 +211,9 @@ header h1 {
 }
 
 
+
+
+
 footer {
     margin-top: 50px;
 }
@@ -247,6 +254,13 @@ footer {
         padding-left: 38px;
         padding-right: 38px;
     }
+
+    .galleryimg {
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+      }
+
 
     .intro .textbox {
         margin-left: 0;
