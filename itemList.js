@@ -20,3 +20,29 @@ function byBtn() {
     historieItem.classList.add("hidden")
     historieTrigger.classList.remove("active")
 }
+
+/* til gallery slideren, basseret på denne tutorial https://softauthor.com/javascript-image-slider-slideshow-carousel/*/
+
+const pictureset = document.querySelectorAll(".galleryimg");
+
+let i = 0;
+
+setInterval(function(){ 
+
+
+  pictureset[i].classList.add('hidden')
+
+ 
+ 
+  i++
+
+  if (i >= pictureset.length) {
+    i = 0;
+  }
+
+  pictureset[i].classList.remove('hidden')
+ 
+
+
+   
+  }, 5000);
