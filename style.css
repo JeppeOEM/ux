@@ -1,0 +1,28 @@
+body{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw 100vh;
+}
+.logo{
+    height: 54px;
+    width: auto;
+}
+h1{
+    color: #00bf6f;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+.grøn{
+    color: #00bf6f;
+    font-weight: bold;
+    font-size: 15px;
+}
+.klik{
+    color: #00bf6f;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 75px;
+    margin-top: -25px;
+}
