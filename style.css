@@ -23,6 +23,17 @@ h1{
     color: #00bf6f;
     font-weight: bold;
     font-size: 15px;
-    margin-left: 75px;
-    margin-top: -25px;
+    /* margin-left: 75px; */
+    /* margin-top: -25px; */
+}
+
+.historie {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #00bf6f;
+    text-align: center;
 }
