@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -16,6 +16,7 @@ body {
 
 nav.top-nav {
     width: 100%;
+    margin-top: -90px;
     z-index: 3;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -23,14 +24,11 @@ nav.top-nav {
 
 nav.top-nav .hamburger {
     margin-left: 0;
-} 
+}
 
 nav.top-nav .active {
     color: #00bf6f;
 }
-
-
-
 
 header {
     margin: 0 auto;
@@ -38,7 +36,7 @@ header {
     height: 48vh;
     min-height: 270px;
     max-height: 450px;
-    background-image:url(../img/forside-bg.jpg);
+    background-image: url(../img/forside-bg.jpg);
     background-size: cover;
     padding: 18px;
     position: relative;
@@ -54,10 +52,6 @@ header h1 {
     max-width: 600px;
     text-shadow: 0px 0px 18px rgba(0, 0, 0, 1);
 }
-
-
-
-
 
 .intro {
     margin: 0 auto;
@@ -98,10 +92,6 @@ header h1 {
     width: 100%;
 }
 
-
-
-
-
 .item-list {
     margin: 0 auto;
     padding: 24px;
@@ -115,7 +105,8 @@ header h1 {
     margin-bottom: 24px;
 }
 
-.item-list #by, .item-list #historie {
+.item-list #by,
+.item-list #historie {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -166,9 +157,6 @@ header h1 {
     display: none !important;
 }
 
-
-
-
 .witches {
     margin: 0 auto;
     margin-bottom: 70px;
@@ -199,9 +187,6 @@ header h1 {
     margin-top: 14px;
 }
 
-
-
-
 .gallery {
     margin: 0 auto;
     margin-bottom: 70px;
@@ -211,85 +196,71 @@ header h1 {
     width: 100%;
 }
 
-
-
-
-
 footer {
     margin-top: 50px;
 }
-
-
-
-
 
 @media only screen and (min-width: 801px) {
     nav.top-nav {
         flex-wrap: nowrap;
     }
-    
-    header, .intro, .item-list, .witches, .gallery {
+    header,
+    .intro,
+    .item-list,
+    .witches,
+    .gallery {
         width: 90%;
     }
-
     .intro .textbox {
         margin-right: 0;
     }
-
-    .witches img{
+    .witches img {
         width: 100%;
     }
 }
-
-
-
 
 @media only screen and (min-width: 1040px) {
     body {
         width: 100%;
     }
-    
-    header, .intro, .item-list, .witches, .gallery {
+    header,
+    .intro,
+    .item-list,
+    .witches,
+    .gallery {
         width: 80%;
         max-width: 1400px;
         padding-left: 38px;
         padding-right: 38px;
     }
-
     .galleryimg {
         width: 100%;
         object-fit: cover;
         height: 400px;
-      }
-
-
+    }
     .intro .textbox {
         margin-left: 0;
         padding: 28px;
     }
-    
     header h1 {
         font-size: 2.7rem;
         line-height: 3rem;
     }
-    
-    .intro a, .intro img {
+    .intro a,
+    .intro img {
         display: block
     }
-
     .witches {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
     .witches img {
         width: 70%;
         max-width: 790px;
         margin: 0;
         margin-left: auto;
     }
-
     .witches .textbox {
         margin: 0;
         margin-top: -36%;
@@ -297,7 +268,6 @@ footer {
         padding: 28px;
         height: fit-content;
     }
-
     .witches a.button {
         margin: 0;
         margin-top: 14px;
