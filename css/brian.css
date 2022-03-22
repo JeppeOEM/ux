@@ -6,13 +6,13 @@ body{
 }
 .logo{
     height: 54px;
-    width: auto;
 }
 h1{
     color: #00bf6f;
     font-size: 35px;
     text-align: center;
     font-weight: bold;
+    margin-top: 60px;
 }
 .grøn{
     color: #00bf6f;
@@ -35,5 +35,17 @@ h1{
 
 h2 {
     color: #00bf6f;
+    text-align: center;
+}
+
+
+section {
+    flex-direction: column;
+}
+
+
+.media {
+    margin: 0 auto;
+    margin-top: 24px;
     text-align: center;
 }
