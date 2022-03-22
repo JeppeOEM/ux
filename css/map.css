@@ -33,6 +33,7 @@ nav.top-nav .hamburger {
 }
 
 .googlemap {
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     height: 408px;
@@ -116,6 +117,37 @@ hr {
     margin-bottom: 20px
 }
 
+.witches {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    margin-top: 24px;
+}
+
+.witches img {
+    display: block;
+    width: calc(100% - 36px);
+    margin: 0 auto;
+}
+
+.witches .textbox {
+    position: relative;
+    margin: 32px;
+    padding: 18px;
+    background-color: #ededee;
+    margin-top: -70px;
+    border-radius: 15px;
+}
+
+.witches .textbox h2 {
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 12px;
+}
+
+.witches .textbox p:last-child {
+    margin-top: 14px;
+}
+
 #Accept {
     filter: sepia(100%) hue-rotate(80deg) saturate(250%) brightness(120%);
 }
@@ -125,7 +157,14 @@ hr {
 
 @media screen and (max-width: 800px) {
     .googlemap {
-        width: 100%;
+        margin-top: 15px;
+        width: 90%;
+    }
+    h3 {
+        font-size: 28px
+    }
+    .sectionflex p {
+        margin: 0 20px;
     }
     p {
         font-size: 12px;
@@ -141,5 +180,27 @@ hr {
 @media only screen and (min-width: 1040px) {
     body {
         width: 100%;
+    }
+    .witches {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .witches img {
+        width: 70%;
+        max-width: 790px;
+        margin: 0;
+        margin-left: auto;
+    }
+    .witches .textbox {
+        margin: 0;
+        margin-top: -36%;
+        max-width: 680px;
+        padding: 28px;
+        height: fit-content;
+    }
+    .witches a.button {
+        margin: 0;
+        margin-top: 14px;
     }
 }
