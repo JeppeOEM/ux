@@ -1,0 +1,26 @@
+
+.hidden{
+    display: none;
+}
+
+
+
+.slideflex{
+display:flex;
+align-items:center;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.slideshow-pictureset img{
+
+    margin-right: auto;
+    margin-left: auto;
+    height:50vw;
+    width:60vw;
+    object-fit: cover;
+    
+    
+}
+
