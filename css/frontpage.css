@@ -205,9 +205,11 @@ header h1 {
 
 .gallery {
     margin: 0 auto;
-    background-color: #ededee;
-    height: 400px;
     margin-bottom: 70px;
+}
+
+.galleryimg {
+    width: 100%;
 }
 
 
